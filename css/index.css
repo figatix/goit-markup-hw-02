@@ -1,0 +1,185 @@
+/* Змінні */
+
+:root {
+    /* colors */
+    
+    --footer-color: #2F303A;
+    --accent: #2196F3;
+    --h-color: #212121;
+    --p-color: #757575;
+    --bgd-color: #FFFFFF;
+    --font-main:'Roboto', sans-serif;
+    --font-logo: 'Raleway', sans-serif;
+
+}
+
+/* Обнуляю стилі */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Задаю стандартні значення  */
+body {
+
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    background-color: var(--bgd-color);
+    color: var(--h-color);
+
+}
+
+/* LOGO */
+.logo{
+    
+    font-family: var(--font-logo);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    color: #000000;
+
+}
+
+.logo > span{
+    color: var(--accent);
+}
+
+/* NAVIGATION */
+.pages-nav-link{
+    
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--h-color);
+    
+}
+
+.pages-nav-link:hover, .pages-nav-link:focus{
+    color: var(--accent);
+
+}
+
+.contact-link{
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--p-color);
+}
+.contact-link:hover, .contact-link:focus{
+    color: var(--accent);
+}
+
+/* HERO */
+.hero{
+    background-color: var(--footer-color);
+}
+
+.hero-tittle{
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--bgd-color);
+}
+
+.hero-btn{
+
+    background-color: var(--accent);
+    color: var(--bgd-color);
+}
+
+/* Our advantages  */
+
+.adv-tittles{
+    
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.adv-section p{
+    color: var(--p-color);
+}
+
+/* WORKS */
+.works-tittle,
+.team-tittle {
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+}
+
+/* team */
+.team-section{
+    background-color: #F5F4FA;;
+}
+
+.team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    
+}
+
+.team-profession{
+
+    font-size: 16px;
+    line-height: 1.19;
+
+    color: var(--p-color);
+}
+
+/* footer */
+
+footer{
+    background-color: var(--footer-color);
+}
+/* footer logo */
+
+footer a.logo {
+    color: var(--bgd-color);
+}
+
+/* addres */
+
+.map-link{
+    font-style: normal;
+    color: var(--bgd-color);
+}
+
+.footer-link{
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover,
+.footer-link:focus,
+.map-link:hover,
+.map-link:focus{
+    color: var(--accent);
+}
+
+
+
+
+
+
