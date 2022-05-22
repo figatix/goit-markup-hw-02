@@ -85,6 +85,10 @@ body {
     color: var(--accent);
 }
 
+.current{
+    color: var(--accent);
+}
+
 /* HERO */
 .hero{
     background-color: var(--footer-color);
@@ -124,8 +128,7 @@ body {
 /* Our advantages  */
 
 .adv-tittles{
-    
-    font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
@@ -135,10 +138,9 @@ body {
 }
 
 /* WORKS */
-.works-tittle,
-.team-tittle {
+
+.section-tittle {
     
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -190,9 +192,7 @@ body {
 }
 
 .footer-link:hover,
-.footer-link:focus,
-.map-link:hover,
-.map-link:focus{
+.footer-link:focus{
     color: var(--accent);
 }
 
@@ -200,7 +200,21 @@ body {
 
 /* PORTFOLIO.HTML */
 
+.projects-section{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 /* FILTER */
+
+.filter{
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .filter-btn{
     font-weight: 500;
@@ -210,12 +224,17 @@ body {
     background: var(--filter-color);
     border-radius: 4px;
     border: none;
+    box-sizing: border-box;
     
+    padding: 6px 22px 6px 22px;
+    margin-right: 8px;
+    margin-bottom: 50px;
 
 }
 
 .filter-btn:hover,
-.filter-btn:focus{
+.filter-btn:focus,
+.filter-btn.active{
     background:var(--accent);
     color: var(--bgd-color);
 
@@ -223,42 +242,88 @@ body {
     cursor: pointer;
 }
 
+
+
 /* PROJECTS */
+.projects-section{
+    padding: 94px 0;
+}
+
+.projects{
+    max-width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
 .project-item{
 
     width: 370px;
     background:var(--bgd-color);
     border: 1px solid #EEEEEE;
     
-    margin: 30px;
+    box-sizing: border-box;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
+
+/* ДЛЯ ПРАВИЛЬНОГО МАРДЖИНК ПРИ 3*3. В ІНШИХ ВИПАДКАХ -ПРОБЛЕМИ  */
+.project-item:nth-child(3),
+.project-item:nth-child(6),
+.project-item:nth-child(9){
+    margin-right: 0;
+}
+
+.project-item:nth-last-child(1),
+.project-item:nth-last-child(2),
+.project-item:nth-last-child(3){
+    margin-bottom: 0;
+}
+
+/* Для того, щоб картинка не налазила на БОРДЕР */
+.projects img {
+    max-width: 368px;
+}
+
+
 .projects-tittle{
-    font-weight: 700;
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--h-color);
 
     margin: 20px 24px 4px 24px;
+
 }
 
 .projects-text{
-    font-weight: 400;
+
     font-size: 16px;
     line-height: 1.88;
 
     color:var(--p-color);
 
     margin: 0 24px 20px 24px;
+
 }
 
 /* ТИМЧАСОВИЙ СТИЛЬ */
 .project-item:hover,
 .project-item:focus {
+
+    box-shadow: 0px 0px 1px 1px var(--accent);
     border: 1px solid var(--accent);
     cursor: pointer;
+    
+
 }
+
+
 
 
 
