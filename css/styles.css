@@ -21,12 +21,13 @@ a{
     text-decoration: none;
 }
 
+
 /* Задаю стандартні значення  */
 body {
 
     font-family: var(--font-main);
-    font-style: normal;
-    font-weight: 400;
+    /* font-style: normal; */
+    /* font-weight: 400; */
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -99,9 +100,14 @@ body {
 }
 
 .hero-btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;  
+    letter-spacing: 0.06em;
 
     background-color: var(--accent);
     color: var(--bgd-color);
+    cursor: pointer;
 }
 
 /* Our advantages  */
@@ -150,12 +156,12 @@ body {
 
 /* footer */
 
-footer{
+.footer{
     background-color: var(--footer-color);
 }
 /* footer logo */
 
-footer a.logo {
+.footer a.logo {
     color: var(--bgd-color);
 }
 
@@ -177,6 +183,11 @@ footer a.logo {
 .map-link:focus{
     color: var(--accent);
 }
+
+
+
+/* PORTFOLIO.HTML */
+
 
 
 
