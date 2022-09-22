@@ -43,7 +43,7 @@ body {
     font-family: var(--font-main);
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    /* letter-spacing: 0.03em; */
 
     background-color: var(--bgd-color);
     color: var(--h-color);
@@ -118,7 +118,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-
+    letter-spacing: 0.03em;
 
     color: #000000;
 
@@ -201,6 +201,7 @@ body {
 }
 
 .hero-btn{
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;  
@@ -247,13 +248,13 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-
+    letter-spacing: 0.03em;
     margin: 0 0 10px 0;
 }
 
 .adv-section p{
     color: var(--p-color);
-
+    letter-spacing: 0.03em;
     margin: 0;
 }
 
@@ -268,7 +269,7 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-
+    letter-spacing: 0.03em;
     margin: 0 0 50px 0;
 
 }
@@ -307,7 +308,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    
+    letter-spacing: 0.03em;
     margin: 0 0 10px 0;
 
 }
@@ -316,7 +317,7 @@ body {
 
     font-size: 16px;
     line-height: 1.19;
-
+    letter-spacing: 0.03em;
     color: var(--p-color);
 
     margin: 0;
@@ -403,12 +404,14 @@ footer{
 .map-link{
     font-style: normal;
     color: var(--bgd-color);
+    letter-spacing: 0.03em;
 
 }
 
 .footer-link{
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.03em;
 }
 
 .footer-link:hover,
@@ -437,10 +440,11 @@ footer{
 }
 
 .filter-btn{
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-
+    letter-spacing: 0.03em;
     background: var(--filter-color);
     border-radius: 4px;
     border: none;
@@ -525,7 +529,7 @@ footer{
 
     font-size: 16px;
     line-height: 1.88;
-
+    letter-spacing: 0.03em;
     color:var(--p-color);
 
     margin: 0 24px 20px 24px;
